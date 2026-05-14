@@ -74,20 +74,11 @@ Kd = Derivative Gain
 
 Final Tuned PID Parameters:
 
-Kp = 25
-
-Ki = 8
-
-Kd = 6
-
 ---
 
 Software Used
 
-GNU Octave (MATLAB-compatible environment)
-
-Scilab/Xcos (Simulink-style block modelling)
-
+(MATLAB)
 ---
 
 Features Implemented
@@ -96,19 +87,13 @@ This project includes:
 
 Open-loop response analysis
 
-Closed-loop PID stabilization
+Closed-loop with PID controller
+
+Closed loop without PID controller
 
 Wind disturbance simulation
 
-Motor thrust adjustment analysis
-
 Sensor noise simulation
-
-Open-loop vs closed-loop comparison
-
-Simulink-style block modelling using Xcos
-
-
 
 ---
 
@@ -129,7 +114,6 @@ Reduced control over altitude
 
 This demonstrated the need for an effective feedback controller.
 
-
 ---
 
 Closed Loop PID Control
@@ -148,7 +132,6 @@ Altitude tracking improved
 
 
 The closed-loop system demonstrated better damping characteristics compared to the open-loop system.
-
 
 ---
 
@@ -172,23 +155,6 @@ This demonstrates disturbance rejection capability and robustness of the control
 
 ---
 
-Motor Thrust Adjustment
-
-The project also includes motor thrust analysis.
-
-The controller dynamically changes motor thrust based on altitude error:
-
-Higher thrust during takeoff
-
-Reduced thrust near stable hovering
-
-Automatic thrust correction during disturbances
-
-
-This behavior closely resembles real quadcopter stabilization systems.
-
-
----
 
 Sensor Noise Simulation
 
